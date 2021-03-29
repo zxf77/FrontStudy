@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptTest</title>
+    <link type="text/css" rel="stylesheet", href="../static/css/test.css"/>
+</head>
+<body>
+    <h2>js学习</h2>
+    <p id="demo">这是现在的文本</p>
+    <button type="button" onclick="myFunction()">点击我使文本放大</button>
+    <button type="button" onclick="myFunctionTest()">点击改变文本</button>
+    <p><b>JavaScript</b>是由一系列计算机执行的<b>语句</b></p>
+    <p>z的值是<b id="calc">?</b></p>
+    <button type="button" onclick="myFunctionTest1()">点击,计算Z</button>
+
+    <P>js中当数值和字符串相加，会将数值看成字符串看成数组</P>
+    <div class="mytest">
+        <p>例如：911+test = &nbsp;</p>
+        <p id="calctest"></p>
+    </div>
+    <button type="button" onclick="myFunction22()">点击我计算值</button>
+    <br>
+
+    <p>将80华摄氏度转换成摄氏度</p>
+    <p id = 'celisus'></p>
+    <button type="button" ondblclick="myfunction001()">计算</button>
+    <br>
+    <p id = 'car'>
+        这是什么车？
+    </p>
+    <button type="button" onclick="showCar()">点击就知道了</button>
+    <br>
+    <button type="button" onclick="this.innerHTML=Date()">现在的时间是？</button>
+    <p id="nowTime"></p>
+
+    <p>字符串loveZswLoveXsw相关</p>
+    <p id="demoString">loveZswLoveZsw</p>
+    <p id="teststring">test</p>
+    <div>
+        <button type="button" onclick="calclength()">计算字符串长度</button>
+        <button type="button" onclick="findFirst()">查找指定文本首次出现的位置</button>
+        <button type="button" onclick="findLast()">返回最后一次出现的索引</button>
+        <button type="button" onclick="replaceSome()">替换一部分值</button>
+
+    </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById('demo').style.fontSize = '40px';
+    }
+</script>
+<script src="../static/js/myjstest.js" type="text/javascript" charset="utf-8"></script>
+</html>
