@@ -52,3 +52,19 @@ function findLast() {
 function replaceSome() {
     document.getElementById("teststring").innerHTML = testString.replace("Love", "verylove");
 }
+
+//练习forEach
+function testForEachClick() {
+    var testFruit;
+    var ttest;
+    var cars = ["bmw", "tesla", "hongqi", "dazhong"];
+    console.log(ttest);
+    cars.forEach(tttestfun);
+    console.log(ttest);
+    document.getElementById("testForEach").innerHTML = ttest.toString();
+
+    function tttestfun(value) {
+
+        ttest += value;
+    }
+}
