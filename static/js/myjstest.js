@@ -67,4 +67,20 @@ function testForEachClick() {
 
         ttest += value;
     }
+
+}
+//学习Date
+function DateStudy() {
+    var date = new Date();
+    document.getElementById("dateTest").innerHTML = date.toDateString();
+}
+//学习随机数
+function NewRandow() {
+    var testa;
+    testa = Math.random() * 10;  //生成随机数乘10
+    testb = Math.floor(testa)                     //转成整数
+    document.getElementById("randowTest").innerHTML = testb;
+}
+function NewRandoww(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
